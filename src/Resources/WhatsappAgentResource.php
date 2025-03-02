@@ -2,7 +2,4 @@
 
 namespace JeffersonGoncalves\Filament\WhatsappWidget\Resources;
 
-class WhatsappAgentResource
-{
-
-}
+class WhatsappAgentResource {}
