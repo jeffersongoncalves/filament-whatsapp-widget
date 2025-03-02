@@ -9,6 +9,9 @@ class WhatsappWidgetServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        $package->name('filament-whatsapp-widget');
+        $package
+            ->name('filament-whatsapp-widget')
+            ->hasConfigFile()
+            ->hasTranslations();
     }
 }

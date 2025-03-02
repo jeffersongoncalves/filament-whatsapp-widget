@@ -20,7 +20,8 @@
         "filament/filament": "^3.0",
         "jeffersongoncalves/laravel-whatsapp-widget": "^1.0",
         "laravel/framework": "^11.0|^12.0",
-        "spatie/laravel-package-tools": "^1.14.0"
+        "spatie/laravel-package-tools": "^1.14.0",
+        "ysfkaya/filament-phone-input": "^3.1"
     },
     "require-dev": {
         "larastan/larastan": "^3.0",
