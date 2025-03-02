@@ -47,7 +47,7 @@ class Utils
 
     public static function getWhatsappAgentResourceSlug(): string
     {
-        return (string)config('filament-whatsapp-widget.whatsapp_agent_resource.slug');
+        return (string) config('filament-whatsapp-widget.whatsapp_agent_resource.slug');
     }
 
     public static function isWhatsappAgentResourceNavigationBadgeEnabled(): bool
@@ -82,7 +82,7 @@ class Utils
 
     public static function getWhatsappLogResourceSlug(): string
     {
-        return (string)config('filament-whatsapp-widget.whatsapp_log_resource.slug');
+        return (string) config('filament-whatsapp-widget.whatsapp_log_resource.slug');
     }
 
     public static function isWhatsappLogResourceNavigationBadgeEnabled(): bool
