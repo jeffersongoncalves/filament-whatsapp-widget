@@ -82,6 +82,4 @@ class WhatsappAgentResource extends Resource
         return Utils::isWhatsappAgentResourceNavigationBadgeEnabled()
             ? strval(static::getEloquentQuery()->count())
             : null;
-    }
-
-}
+    }}

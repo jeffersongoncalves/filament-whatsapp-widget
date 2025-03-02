@@ -82,6 +82,4 @@ class WhatsappLogResource extends Resource
         return Utils::isWhatsappLogResourceNavigationBadgeEnabled()
             ? strval(static::getEloquentQuery()->count())
             : null;
-    }
-
-}
+    }}
