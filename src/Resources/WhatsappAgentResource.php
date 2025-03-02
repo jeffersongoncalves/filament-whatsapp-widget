@@ -3,8 +3,8 @@
 namespace JeffersonGoncalves\Filament\WhatsappWidget\Resources;
 
 use Filament\Resources\Resource;
-use JeffersonGoncalves\Filament\WhatsappWidget\Support\Utils;
 use JeffersonGoncalves\Filament\WhatsappWidget\Resources\WhatsappAgentResource\Pages;
+use JeffersonGoncalves\Filament\WhatsappWidget\Support\Utils;
 
 class WhatsappAgentResource extends Resource
 {
