@@ -155,6 +155,7 @@ class WhatsappAgentResource extends Resource
         if (Utils::isResourceNavigationGroupEnabled()) {
             return __('filament-whatsapp-widget::filament-whatsapp-widget.nav.group');
         }
+
         return '';
     }
 
@@ -183,6 +184,7 @@ class WhatsappAgentResource extends Resource
         if (Utils::isResourceNavigationBadgeEnabled()) {
             return strval(static::getEloquentQuery()->count());
         }
+
         return null;
     }
 }
