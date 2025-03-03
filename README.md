@@ -33,6 +33,17 @@ Publish assets file.
 
 ```bash
 php artisan vendor:publish --tag=whatsapp-widget-assets
+php artisan vendor:publish --tag=filament-phone-input-assets
+```
+
+Add in AdminPanelProvider.php
+
+```php
+use JeffersonGoncalves\Filament\WhatsappWidget\WhatsappWidgetPlugin;
+
+->plugins([
+    WhatsappWidgetPlugin::make(),
+])
 ```
 
 Add head template.
