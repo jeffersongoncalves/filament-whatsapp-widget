@@ -20,9 +20,10 @@ Publish config file.
 
 ```bash
 php artisan vendor:publish --tag=whatsapp-widget-config
+php artisan vendor:publish --tag=filament-whatsapp-widget-config
 ```
 
-Publish config file.
+Publish migration file.
 
 ```bash
 php artisan vendor:publish --tag=whatsapp-widget-migrations
