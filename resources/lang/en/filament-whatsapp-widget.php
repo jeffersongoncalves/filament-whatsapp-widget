@@ -51,7 +51,7 @@ return [
 
     'nav.group' => 'Whatsapp',
     'nav.whatsapp_agent.label' => 'Whatsapp Agent',
-    'nav.whatsapp_agent.icon' => 'heroicon-o-chat',
+    'nav.whatsapp_agent.icon' => 'heroicon-s-chat-bubble-left',
     'resource.label.whatsapp_agent' => 'Whatsapp Agent',
     'resource.label.whatsapp_agents' => 'Whatsapp Agents',
 ];
