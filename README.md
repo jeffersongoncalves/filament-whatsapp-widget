@@ -29,6 +29,12 @@ Publish migration file.
 php artisan vendor:publish --tag=whatsapp-widget-migrations
 ```
 
+Publish assets file.
+
+```bash
+php artisan vendor:publish --tag=whatsapp-widget-assets
+```
+
 Add head template.
 
 ```php
