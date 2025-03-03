@@ -4,23 +4,16 @@ namespace JeffersonGoncalves\Filament\WhatsappWidget\Support;
 
 use Filament\Panel;
 use JeffersonGoncalves\WhatsappWidget\Models\WhatsappAgent;
-use JeffersonGoncalves\WhatsappWidget\Models\WhatsappLog;
 
 class Utils
 {
-    public static function isWhatsappAgentResourcePublished(Panel $panel): bool
+    public static function isResourcePublished(Panel $panel): bool
     {
         return str(string: collect(value: $panel->getResources())->values()->join(','))
             ->contains('WhatsappAgentResource');
     }
 
-    public static function isWhatsappLogResourcePublished(Panel $panel): bool
-    {
-        return str(string: collect(value: $panel->getResources())->values()->join(','))
-            ->contains('WhatsappAgentLog');
-    }
-
-    public static function getWhatsappAgentResourceCluster(): ?string
+    public static function getResourceCluster(): ?string
     {
         return config('filament-whatsapp-widget.whatsapp_agent_resource.cluster', null);
     }
@@ -30,63 +23,28 @@ class Utils
         return config('filament-whatsapp-widget.whatsapp_agent_resource.model', WhatsappAgent::class);
     }
 
-    public static function isWhatsappAgentResourceNavigationRegistered(): bool
+    public static function isResourceNavigationRegistered(): bool
     {
         return config('filament-whatsapp-widget.whatsapp_agent_resource.should_register_navigation', true);
     }
 
-    public static function isWhatsappAgentResourceNavigationGroupEnabled(): bool
+    public static function isResourceNavigationGroupEnabled(): bool
     {
         return config('filament-whatsapp-widget.whatsapp_agent_resource.navigation_group', true);
     }
 
-    public static function getWhatsappAgentResourceNavigationSort(): ?int
+    public static function getResourceNavigationSort(): ?int
     {
         return config('filament-whatsapp-widget.whatsapp_agent_resource.navigation_sort');
     }
 
-    public static function getWhatsappAgentResourceSlug(): string
+    public static function getResourceSlug(): string
     {
-        return (string) config('filament-whatsapp-widget.whatsapp_agent_resource.slug');
+        return (string)config('filament-whatsapp-widget.whatsapp_agent_resource.slug');
     }
 
-    public static function isWhatsappAgentResourceNavigationBadgeEnabled(): bool
+    public static function isResourceNavigationBadgeEnabled(): bool
     {
         return config('filament-whatsapp-widget.whatsapp_agent_resource.navigation_badge', true);
-    }
-
-    public static function getWhatsappLogResourceCluster(): ?string
-    {
-        return config('filament-whatsapp-widget.whatsapp_log_resource.cluster', null);
-    }
-
-    public static function getWhatsappLogModel(): string
-    {
-        return config('filament-whatsapp-widget.whatsapp_log_resource.model', WhatsappLog::class);
-    }
-
-    public static function isWhatsappLogResourceNavigationRegistered(): bool
-    {
-        return config('filament-whatsapp-widget.whatsapp_log_resource.should_register_navigation', true);
-    }
-
-    public static function isWhatsappLogResourceNavigationGroupEnabled(): bool
-    {
-        return config('filament-whatsapp-widget.whatsapp_log_resource.navigation_group', true);
-    }
-
-    public static function getWhatsappLogResourceNavigationSort(): ?int
-    {
-        return config('filament-whatsapp-widget.whatsapp_log_resource.navigation_sort');
-    }
-
-    public static function getWhatsappLogResourceSlug(): string
-    {
-        return (string) config('filament-whatsapp-widget.whatsapp_log_resource.slug');
-    }
-
-    public static function isWhatsappLogResourceNavigationBadgeEnabled(): bool
-    {
-        return config('filament-whatsapp-widget.whatsapp_log_resource.navigation_badge', true);
     }
 }

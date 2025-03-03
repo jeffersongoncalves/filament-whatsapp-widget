@@ -20,11 +20,8 @@ class WhatsappWidgetPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        if (! Utils::isWhatsappAgentResourcePublished($panel)) {
+        if (! Utils::isResourcePublished($panel)) {
             $panel->resources([Resources\WhatsappAgentResource::class]);
-        }
-        if (! Utils::isWhatsappLogResourcePublished($panel)) {
-            $panel->resources([Resources\WhatsappLogResource::class]);
         }
     }
 
