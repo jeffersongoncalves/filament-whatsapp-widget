@@ -40,7 +40,7 @@ class Utils
 
     public static function getResourceSlug(): string
     {
-        return (string)config('filament-whatsapp-widget.whatsapp_agent_resource.slug');
+        return (string) config('filament-whatsapp-widget.whatsapp_agent_resource.slug');
     }
 
     public static function isResourceNavigationBadgeEnabled(): bool
