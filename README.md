@@ -1,3 +1,9 @@
+<div class="filament-hidden">
+
+![Laravel Created By](https://raw.githubusercontent.com/jeffersongoncalves/filament-whatsapp-widget/master/art/jeffersongoncalves-filament-whatsapp-widget.png)
+
+</div>
+
 # Filament Whatsapp Widget
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-whatsapp-widget.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-whatsapp-widget)
