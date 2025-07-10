@@ -23,7 +23,8 @@ class WhatsappAgentResource extends Resource
             ->schema([
                 Forms\Components\Toggle::make('active')
                     ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.active'))
-                    ->required(),
+                    ->required()
+                    ->columnSpanFull(),
                 Forms\Components\TextInput::make('name')
                     ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.name'))
                     ->required()
@@ -53,7 +54,8 @@ class WhatsappAgentResource extends Resource
                     ->schema([
                         Infolists\Components\IconEntry::make('active')
                             ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.active'))
-                            ->boolean(),
+                            ->boolean()
+                            ->columnSpanFull(),
                         Infolists\Components\TextEntry::make('name')
                             ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.name')),
                         PhoneEntry::make('phone')
@@ -166,7 +168,7 @@ class WhatsappAgentResource extends Resource
 
     public static function getNavigationIcon(): string
     {
-        return __('filament-whatsapp-widget::filament-whatsapp-widget.nav.whatsapp_agent.icon');
+        return Utils::getResourceNavigationIcon();
     }
 
     public static function getNavigationSort(): ?int

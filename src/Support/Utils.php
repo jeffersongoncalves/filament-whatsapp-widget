@@ -38,6 +38,11 @@ class Utils
         return config('filament-whatsapp-widget.whatsapp_agent_resource.navigation_sort');
     }
 
+    public static function getResourceNavigationIcon(): string
+    {
+        return config('filament-whatsapp-widget.whatsapp_agent_resource.navigation_icon', 'heroicon-s-chat-bubble-left');
+    }
+
     public static function getResourceSlug(): string
     {
         return (string) config('filament-whatsapp-widget.whatsapp_agent_resource.slug');

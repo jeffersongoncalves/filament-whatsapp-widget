@@ -9,6 +9,7 @@ return [
         'should_register_navigation' => true,
         'navigation_badge' => true,
         'navigation_sort' => -1,
+        'navigation_icon' => 'heroicon-s-chat-bubble-left',
         'slug' => 'whatsapp/whatsapp-agent',
     ],
 ];
