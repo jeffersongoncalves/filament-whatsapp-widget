@@ -4,6 +4,7 @@ namespace JeffersonGoncalves\Filament\WhatsappWidget;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use JeffersonGoncalves\Filament\WhatsappWidget\Resources\WhatsappAgentResource;
 use JeffersonGoncalves\Filament\WhatsappWidget\Support\Utils;
 
 class WhatsappWidgetPlugin implements Plugin
@@ -21,7 +22,7 @@ class WhatsappWidgetPlugin implements Plugin
     public function register(Panel $panel): void
     {
         if (! Utils::isResourcePublished($panel)) {
-            $panel->resources([Resources\WhatsappAgentResource::class]);
+            $panel->resources([WhatsappAgentResource::class]);
         }
     }
 

@@ -2,7 +2,7 @@
 
 namespace JeffersonGoncalves\Filament\WhatsappWidget\Resources\WhatsappAgentResource\Pages;
 
-use Filament\Actions;
+use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
 use JeffersonGoncalves\Filament\WhatsappWidget\Resources\WhatsappAgentResource;
 
@@ -13,7 +13,7 @@ class ListWhatsappAgents extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            CreateAction::make(),
         ];
     }
 }

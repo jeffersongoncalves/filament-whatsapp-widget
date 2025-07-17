@@ -2,14 +2,27 @@
 
 namespace JeffersonGoncalves\Filament\WhatsappWidget\Resources;
 
-use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Infolists;
-use Filament\Infolists\Infolist;
+use Filament\Actions\DeleteAction;
+use Filament\Actions\EditAction;
+use Filament\Actions\ViewAction;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Toggle;
+use Filament\Infolists\Components\IconEntry;
+use Filament\Infolists\Components\ImageEntry;
+use Filament\Infolists\Components\TextEntry;
+use Filament\Panel;
 use Filament\Resources\Resource;
-use Filament\Tables;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Schema;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\ImageColumn;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-use JeffersonGoncalves\Filament\WhatsappWidget\Resources\WhatsappAgentResource\Pages;
+use JeffersonGoncalves\Filament\WhatsappWidget\Resources\WhatsappAgentResource\Pages\CreateWhatsappAgent;
+use JeffersonGoncalves\Filament\WhatsappWidget\Resources\WhatsappAgentResource\Pages\EditWhatsappAgent;
+use JeffersonGoncalves\Filament\WhatsappWidget\Resources\WhatsappAgentResource\Pages\ListWhatsappAgents;
+use JeffersonGoncalves\Filament\WhatsappWidget\Resources\WhatsappAgentResource\Pages\ViewWhatsappAgent;
 use JeffersonGoncalves\Filament\WhatsappWidget\Support\Utils;
 use Ysfkaya\FilamentPhoneInput\Forms\PhoneInput;
 use Ysfkaya\FilamentPhoneInput\Infolists\PhoneEntry;
@@ -17,15 +30,15 @@ use Ysfkaya\FilamentPhoneInput\PhoneInputNumberType;
 
 class WhatsappAgentResource extends Resource
 {
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-        return $form
-            ->schema([
-                Forms\Components\Toggle::make('active')
+        return $schema
+            ->components([
+                Toggle::make('active')
                     ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.active'))
                     ->required()
                     ->columnSpanFull(),
-                Forms\Components\TextInput::make('name')
+                TextInput::make('name')
                     ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.name'))
                     ->required()
                     ->maxLength(255),
@@ -33,37 +46,37 @@ class WhatsappAgentResource extends Resource
                     ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.phone'))
                     ->validateFor()
                     ->displayNumberFormat(PhoneInputNumberType::INTERNATIONAL),
-                Forms\Components\TextInput::make('text')
+                TextInput::make('text')
                     ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.text'))
                     ->maxLength(255)
                     ->default(null),
-                Forms\Components\FileUpload::make('image')
+                FileUpload::make('image')
                     ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.image'))
                     ->image()
                     ->disk(config('whatsapp-widget.disk')),
             ]);
     }
 
-    public static function infolist(Infolist $infolist): Infolist
+    public static function infolist(Schema $schema): Schema
     {
-        return $infolist
-            ->schema([
-                Infolists\Components\Section::make()
+        return $schema
+            ->components([
+                Section::make()
                     ->description()
                     ->columns()
                     ->schema([
-                        Infolists\Components\IconEntry::make('active')
+                        IconEntry::make('active')
                             ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.active'))
                             ->boolean()
                             ->columnSpanFull(),
-                        Infolists\Components\TextEntry::make('name')
+                        TextEntry::make('name')
                             ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.name')),
                         PhoneEntry::make('phone')
                             ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.phone'))
                             ->displayFormat(PhoneInputNumberType::INTERNATIONAL),
-                        Infolists\Components\TextEntry::make('text')
+                        TextEntry::make('text')
                             ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.text')),
-                        Infolists\Components\ImageEntry::make('image')
+                        ImageEntry::make('image')
                             ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.image'))
                             ->disk(config('whatsapp-widget.disk')),
                     ]),
@@ -74,27 +87,27 @@ class WhatsappAgentResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\IconColumn::make('active')
+                IconColumn::make('active')
                     ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.active'))
                     ->boolean(),
-                Tables\Columns\TextColumn::make('name')
+                TextColumn::make('name')
                     ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.name'))
                     ->searchable(),
-                Tables\Columns\TextColumn::make('phone')
+                TextColumn::make('phone')
                     ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.phone'))
                     ->searchable(),
-                Tables\Columns\TextColumn::make('text')
+                TextColumn::make('text')
                     ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.text'))
                     ->searchable(),
-                Tables\Columns\ImageColumn::make('image')
+                ImageColumn::make('image')
                     ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.image'))
                     ->disk(config('whatsapp-widget.disk')),
-                Tables\Columns\TextColumn::make('created_at')
+                TextColumn::make('created_at')
                     ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.created_at'))
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
+                TextColumn::make('updated_at')
                     ->label(__('filament-whatsapp-widget::filament-whatsapp-widget.column.updated_at'))
                     ->dateTime()
                     ->sortable()
@@ -103,10 +116,10 @@ class WhatsappAgentResource extends Resource
             ->filters([
                 //
             ])
-            ->actions([
-                Tables\Actions\ViewAction::make(),
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
+            ->recordActions([
+                ViewAction::make(),
+                EditAction::make(),
+                DeleteAction::make(),
             ]);
     }
 
@@ -120,10 +133,10 @@ class WhatsappAgentResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListWhatsappAgents::route('/'),
-            'create' => Pages\CreateWhatsappAgent::route('/create'),
-            'view' => Pages\ViewWhatsappAgent::route('/{record}'),
-            'edit' => Pages\EditWhatsappAgent::route('/{record}/edit'),
+            'index' => ListWhatsappAgents::route('/'),
+            'create' => CreateWhatsappAgent::route('/create'),
+            'view' => ViewWhatsappAgent::route('/{record}'),
+            'edit' => EditWhatsappAgent::route('/{record}/edit'),
         ];
     }
 
@@ -176,7 +189,7 @@ class WhatsappAgentResource extends Resource
         return Utils::getResourceNavigationSort();
     }
 
-    public static function getSlug(): string
+    public static function getSlug(?Panel $panel = null): string
     {
         return Utils::getResourceSlug();
     }
