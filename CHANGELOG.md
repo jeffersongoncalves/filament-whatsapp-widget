@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## v2.0.0 - 2025-07-17
+
+**Full Changelog**: https://github.com/jeffersongoncalves/filament-whatsapp-widget/compare/v1.2.3...v2.0.0
+
 ## v1.2.3 - 2025-07-10
 
 ### What's Changed
