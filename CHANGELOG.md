@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## v1.3.0 - 2025-12-27
+
+### What's Changed
+
+* Bump aglipanci/laravel-pint-action from 2.5 to 2.6 by @dependabot[bot] in https://github.com/jeffersongoncalves/filament-whatsapp-widget/pull/9
+
+**Full Changelog**: https://github.com/jeffersongoncalves/filament-whatsapp-widget/compare/v1.2.3...v1.3.0
+
 ## v1.2.3 - 2025-07-10
 
 ### What's Changed
