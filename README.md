@@ -12,6 +12,14 @@
 
 This Filament package provides a simple yet customizable WhatsApp widget for your website. It allows you to easily add a clickable WhatsApp button or floating widget to connect visitors directly with your WhatsApp account. The widget is designed to be easily integrated into your Laravel application and is fully customizable to match your website's design.
 
+## Compatibility
+
+| Package Version                                                                | Filament Version |
+|--------------------------------------------------------------------------------|------------------|
+| [1.x](https://github.com/jeffersongoncalves/filament-whatsapp-widget/tree/1.x) | 3.x              |
+| [2.x](https://github.com/jeffersongoncalves/filament-whatsapp-widget/tree/2.x) | 4.x              |
+| [3.x](https://github.com/jeffersongoncalves/filament-whatsapp-widget/tree/3.x) | 5.x              |
+
 ## Features
 
 - 🚀 **Multi-agent support**: Add multiple WhatsApp agents with different phone numbers and names
@@ -21,15 +29,6 @@ This Filament package provides a simple yet customizable WhatsApp widget for you
 - 🌐 **Localization support**: Easily translate the widget to any language
 - 🔄 **Pre-defined messages**: Set default text messages for each agent
 - 🖼️ **Custom agent avatars**: Add profile pictures for each agent
-
-## Compatibility
-
-| Package Version                                                                | Filament Version |
-|--------------------------------------------------------------------------------|------------------|
-| [1.x](https://github.com/jeffersongoncalves/filament-whatsapp-widget/tree/1.x) | 3.x              |
-| [2.x](https://github.com/jeffersongoncalves/filament-whatsapp-widget/tree/2.x) | 4.x              |
-| [3.x](https://github.com/jeffersongoncalves/filament-whatsapp-widget/tree/3.x) | 5.x              |
-
 
 ## Requirements
 
