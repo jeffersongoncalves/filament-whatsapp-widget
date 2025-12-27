@@ -46,6 +46,8 @@ composer require jeffersongoncalves/filament-whatsapp-widget:^2.0
 
 ## Usage
 
+This package is a Filament wrapper for [jeffersongoncalves/laravel-whatsapp-widget](https://github.com/jeffersongoncalves/laravel-whatsapp-widget).
+
 Publish config file.
 
 ```bash
@@ -165,7 +167,7 @@ This package is translated into several languages:
 - Slovak
 - Turkish
 
-You can customize the widget's text by editing the translation files in `resources/lang/vendor/whatsapp-widget/`.
+You can customize the widget's text by editing the translation files in `resources/lang/vendor/filament-whatsapp-widget/`.
 
 ### Position
 
