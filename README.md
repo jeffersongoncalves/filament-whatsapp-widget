@@ -158,24 +158,24 @@ return [
 
 This package is translated into several languages:
 
-- Arabic
-- Czech
-- German
-- English
-- Spanish
-- Persian
-- French
-- Hebrew
-- Indonesian
-- Italian
-- Japanese
-- Dutch
-- Polish
-- Portuguese
-- Portuguese (Brazil)
-- Portuguese (Portugal)
-- Slovak
-- Turkish
+- Arabic (`ar`)
+- Czech (`cs`)
+- German (`de`)
+- English (`en`)
+- Spanish (`es`)
+- Persian (`fa`)
+- French (`fr`)
+- Hebrew (`he`)
+- Indonesian (`id`)
+- Italian (`it`)
+- Japanese (`ja`)
+- Dutch (`nl`)
+- Polish (`pl`)
+- Portuguese (`pt`)
+- Portuguese (Brazil) (`pt_BR`)
+- Portuguese (Portugal) (`pt_PT`)
+- Slovak (`sk`)
+- Turkish (`tr`)
 
 You can customize the widget's text by editing the translation files in `resources/lang/vendor/filament-whatsapp-widget/`.
 
@@ -183,9 +183,9 @@ You can customize the widget's text by editing the translation files in `resourc
 
 ### Widget
 
-| Default                                                              | Open                                                                                  |
-|----------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| ![Widget Position Left](screenshots/whatsapp-widget-bottom-left.png) | ![Widget Position Left Open](screenshots/whatsapp-widget-bottom-left-open-widget.png) |
+| Default                                                                | Open                                                                                    |
+|------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| ![Widget Position Left](screenshots/whatsapp-widget-bottom-left.png)   | ![Widget Position Left Open](screenshots/whatsapp-widget-bottom-left-open-widget.png)   |
 | ![Widget Position Right](screenshots/whatsapp-widget-bottom-right.png) | ![Widget Position Right Open](screenshots/whatsapp-widget-bottom-right-open-widget.png) |
 
 ### Redirect Page
