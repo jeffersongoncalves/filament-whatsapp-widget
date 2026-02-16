@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## v2.2.0 - 2026-02-16
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.4.0 to 2.5.0 by @dependabot[bot] in https://github.com/jeffersongoncalves/filament-whatsapp-widget/pull/16
+
+**Full Changelog**: https://github.com/jeffersongoncalves/filament-whatsapp-widget/compare/v2.1.0...v2.2.0
+
 ## v2.1.0 - 2025-12-27
 
 ### What's Changed
