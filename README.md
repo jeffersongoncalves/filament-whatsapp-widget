@@ -1,13 +1,13 @@
 <div class="filament-hidden">
 
-![Laravel Created By](https://raw.githubusercontent.com/jeffersongoncalves/filament-whatsapp-widget/master/art/jeffersongoncalves-filament-whatsapp-widget.png)
+![Filament Whatsapp Widget](https://raw.githubusercontent.com/jeffersongoncalves/filament-whatsapp-widget/3.x/art/jeffersongoncalves-filament-whatsapp-widget.png)
 
 </div>
 
 # Filament Whatsapp Widget
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-whatsapp-widget.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-whatsapp-widget)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-whatsapp-widget/fix-php-code-style-issues.yml?branch=master&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-whatsapp-widget/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amaster)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-whatsapp-widget/fix-php-code-style-issues.yml?branch=3.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-whatsapp-widget/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A3.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-whatsapp-widget.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-whatsapp-widget)
 
 This Filament package provides a simple yet customizable WhatsApp widget for your website. It allows you to easily add a clickable WhatsApp button or floating widget to connect visitors directly with your WhatsApp account. The widget is designed to be easily integrated into your Laravel application and is fully customizable to match your website's design.
@@ -16,7 +16,7 @@ This Filament package provides a simple yet customizable WhatsApp widget for you
 
 - PHP 8.2 or higher
 - Laravel 11.0 or higher
-- Filament 4.0 or higher
+- Filament 5.0
 
 ## Installation
 
