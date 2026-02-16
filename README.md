@@ -28,6 +28,8 @@ composer require jeffersongoncalves/filament-whatsapp-widget
 
 ## Usage
 
+This package is a Filament wrapper for [jeffersongoncalves/laravel-whatsapp-widget](https://github.com/jeffersongoncalves/laravel-whatsapp-widget).
+
 Publish config file.
 
 ```bash
@@ -58,17 +60,138 @@ use JeffersonGoncalves\Filament\WhatsappWidget\WhatsappWidgetPlugin;
 ])
 ```
 
-Add head template.
+### Manual Usage (Optional)
+
+If you want to use the widget on non-Filament pages, add the following templates to your layout:
+
+#### Head Template
 
 ```php
 @include('whatsapp-widget::whatsapp-widget-head')
 ```
 
-Add body template.
+#### Body Template
 
 ```php
 @include('whatsapp-widget::whatsapp-widget-body')
 ```
+
+## Configuration
+
+After publishing the configuration file, you can customize the widget by editing the `config/whatsapp-widget.php` file:
+
+```php
+return [
+    // Enable or disable audio notification
+    'audio' => true,
+
+    // Play audio notification once per day or on every page load
+    'play_audio_daily' => true,
+
+    // Filesystem disk for storing agent images
+    'disk' => env('FILESYSTEM_DISK', 'local'),
+
+    // Application URL (used for redirection)
+    'url' => env('APP_URL', 'http://localhost'),
+
+    // Application name (displayed in the widget)
+    'name' => env('APP_NAME', 'Laravel App'),
+
+    // WhatsApp API key (if needed)
+    'key' => env('WHATSAPP_KEY'),
+
+    // Widget position on the screen (left or right)
+    'position' => 'right',
+];
+```
+
+And `config/filament-whatsapp-widget.php` file:
+
+```php
+use JeffersonGoncalves\WhatsappWidget\Models\WhatsappAgent;
+
+return [
+    'whatsapp_agent_resource' => [
+        'cluster' => null,
+        'model' => WhatsappAgent::class,
+        'should_register_navigation' => true,
+        'navigation_group' => true,
+        'navigation_badge' => true,
+        'navigation_sort' => -1,
+        'navigation_icon' => 'heroicon-s-chat-bubble-left',
+        'slug' => 'whatsapp/whatsapp-agent',
+    ],
+];
+```
+
+## Customization
+
+### Translations
+
+This package is translated into several languages:
+
+- Arabic
+- Czech
+- German
+- English
+- Spanish
+- Persian
+- French
+- Hebrew
+- Indonesian
+- Italian
+- Japanese
+- Dutch
+- Polish
+- Portuguese
+- Portuguese (Brazil)
+- Portuguese (Portugal)
+- Slovak
+- Turkish
+
+You can customize the widget's text by editing the translation files in `resources/lang/vendor/filament-whatsapp-widget/`.
+
+### Position
+
+By default, the widget appears in the bottom-right corner of the page. You can change this by modifying the `position` value in the `config/whatsapp-widget.php` file.
+
+Example for left position:
+
+```php
+'position' => 'left',
+```
+
+| Default                                                              | Open                                                                                  |
+|----------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| ![Widget Position Left](screenshots/whatsapp-widget-bottom-left.png) | ![Widget Position Left Open](screenshots/whatsapp-widget-bottom-left-open-widget.png) |
+
+Example for right position:
+
+```php
+'position' => 'right',
+```
+
+| Default                                                                | Open                                                                                    |
+|------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| ![Widget Position Right](screenshots/whatsapp-widget-bottom-right.png) | ![Widget Position Right Open](screenshots/whatsapp-widget-bottom-right-open-widget.png) |
+
+### Redirect Page
+
+When a user clicks on an agent, they are redirected to a temporary page before being sent to WhatsApp. This page can be customized by publishing the package views.
+
+![Redirect Page](screenshots/whatsapp-widget-redirect-page.png)
+
+### Filament Resource
+
+You can manage your WhatsApp agents using the Filament resource provided by this package.
+
+| List                                                          | Create                                                           |
+|---------------------------------------------------------------|------------------------------------------------------------------|
+| ![List Agents](screenshots/whatsapp-widget-resource-list.png) | ![Create Agent](screenshots/whatsapp-widget-resource-create.png) |
+
+| Edit                                                         | View                                                         |
+|--------------------------------------------------------------|--------------------------------------------------------------|
+| ![Edit Agent](screenshots/whatsapp-widget-resource-edit.png) | ![View Agent](screenshots/whatsapp-widget-resource-view.png) |
 
 ## Testing
 
