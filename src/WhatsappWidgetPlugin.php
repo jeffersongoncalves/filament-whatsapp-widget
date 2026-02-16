@@ -4,7 +4,7 @@ namespace JeffersonGoncalves\Filament\WhatsappWidget;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
-use JeffersonGoncalves\Filament\WhatsappWidget\Resources\WhatsappAgentResource;
+use JeffersonGoncalves\Filament\WhatsappWidget\Resources\WhatsappAgents\WhatsappAgentResource;
 use JeffersonGoncalves\Filament\WhatsappWidget\Support\Utils;
 
 class WhatsappWidgetPlugin implements Plugin
