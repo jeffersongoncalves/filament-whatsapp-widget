@@ -6,7 +6,6 @@ use Filament\Panel;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Tables\Table;
-use JeffersonGoncalves\Filament\WhatsappWidget\Resources\WhatsappAgents\Pages;
 use JeffersonGoncalves\Filament\WhatsappWidget\Resources\WhatsappAgents\Schemas\WhatsappAgentForm;
 use JeffersonGoncalves\Filament\WhatsappWidget\Resources\WhatsappAgents\Schemas\WhatsappAgentInfolist;
 use JeffersonGoncalves\Filament\WhatsappWidget\Resources\WhatsappAgents\Tables\WhatsappAgentsTable;
