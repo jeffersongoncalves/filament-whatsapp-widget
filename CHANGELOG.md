@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## v3.0.1 - 2026-02-16
+
+### What's Changed
+
+* Bump actions/checkout from 5 to 6 by @dependabot[bot] in https://github.com/jeffersongoncalves/filament-whatsapp-widget/pull/18
+
+**Full Changelog**: https://github.com/jeffersongoncalves/filament-whatsapp-widget/compare/v3.0.0...v3.0.1
+
 ## v3.0.0 - 2026-02-16
 
 ### What's Changed
