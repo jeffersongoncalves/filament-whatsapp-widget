@@ -1,6 +1,6 @@
 <div class="filament-hidden">
 
-![Laravel Created By](https://raw.githubusercontent.com/jeffersongoncalves/filament-whatsapp-widget/master/art/jeffersongoncalves-filament-whatsapp-widget.png)
+![Filament Whatsapp Widget](https://raw.githubusercontent.com/jeffersongoncalves/filament-whatsapp-widget/1.x/art/jeffersongoncalves-filament-whatsapp-widget.png)
 
 </div>
 
