@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 3.0.2 - 2026-02-24
+
+### What's Changed
+
+- Add Laravel 13.x support, remove explicit laravel/framework constraint (orchestra/testbench ^11.0)
+
 ## v3.0.1 - 2026-02-16
 
 ### What's Changed
