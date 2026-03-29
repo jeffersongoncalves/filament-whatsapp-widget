@@ -1,6 +1,6 @@
 <div class="filament-hidden">
 
-![Filament Whatsapp Widget](https://raw.githubusercontent.com/jeffersongoncalves/filament-whatsapp-widget/1.x/art/jeffersongoncalves-filament-whatsapp-widget.png)
+![Filament Whatsapp Widget](https://raw.githubusercontent.com/jeffersongoncalves/filament-whatsapp-widget/1.x/art/jeffersongoncalves-filament-whatsapp-widget.jpg)
 
 </div>
 
