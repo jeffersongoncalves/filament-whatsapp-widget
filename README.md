@@ -6,6 +6,8 @@
 
 # Filament Whatsapp Widget
 
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/jeffersongoncalves)
+
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/filament-whatsapp-widget.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-whatsapp-widget)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/filament-whatsapp-widget/fix-php-code-style-issues.yml?branch=3.x&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/filament-whatsapp-widget/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3A3.x)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/filament-whatsapp-widget.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/filament-whatsapp-widget)
