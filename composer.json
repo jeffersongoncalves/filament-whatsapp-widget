@@ -18,7 +18,7 @@
     "require": {
         "php": "^8.2|^8.3",
         "filament/filament": "^4.8",
-        "jeffersongoncalves/laravel-whatsapp-widget": "^1.4",
+        "jeffersongoncalves/laravel-whatsapp-widget": "^2.0",
         "laravel/framework": "^11.0|^12.0|^13.0",
         "spatie/laravel-package-tools": "^1.14.0",
         "ysfkaya/filament-phone-input": "^4.0"
