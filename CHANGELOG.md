@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.3.0 - 2026-09-23
+
+### What's new
+
+- **Translations:** 6 new locales (az, hi, ru, uk, uz, zh_CN). (#38)
+
+Thanks to @Elvin-Qulizade (Elvin Qulizada) for the i18n initiative behind these translations — first contributed in jeffersongoncalves/filament-scanner-guard#2 and now rolled out across the Filament plugins. He is credited as co-author.
+
+### What's Changed
+
+* docs: add Buy Me a Coffee sponsor link by @jeffersongoncalves in https://github.com/jeffersongoncalves/filament-whatsapp-widget/pull/24
+* chore: add Buy Me a Coffee to FUNDING.yml by @jeffersongoncalves in https://github.com/jeffersongoncalves/filament-whatsapp-widget/pull/27
+* ci: standardize update-changelog workflow (2.x) by @jeffersongoncalves in https://github.com/jeffersongoncalves/filament-whatsapp-widget/pull/29
+* build(deps): bump the actions-deps group with 2 updates by @dependabot[bot] in https://github.com/jeffersongoncalves/filament-whatsapp-widget/pull/33
+* build(deps): update jeffersongoncalves/laravel-whatsapp-widget requirement from ^1.4 to ^2.0 in the composer-deps group by @dependabot[bot] in https://github.com/jeffersongoncalves/filament-whatsapp-widget/pull/34
+* feat(i18n): add translations (2.x) by @jeffersongoncalves in https://github.com/jeffersongoncalves/filament-whatsapp-widget/pull/38
+
+**Full Changelog**: https://github.com/jeffersongoncalves/filament-whatsapp-widget/compare/v2.2.1...2.3.0
+
 ## v2.2.1 - 2026-03-04
 
 ### Breaking Changes
