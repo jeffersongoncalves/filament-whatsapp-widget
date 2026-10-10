@@ -14,6 +14,7 @@ use Filament\Support\SupportServiceProvider;
 use Filament\Tables\TablesServiceProvider;
 use Filament\Widgets\WidgetsServiceProvider;
 use JeffersonGoncalves\Filament\WhatsappWidget\Tests\Fixtures\TestPanelProvider;
+use JeffersonGoncalves\Filament\WhatsappWidget\WhatsappWidgetServiceProvider;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use RyanChandler\BladeCaptureDirective\BladeCaptureDirectiveServiceProvider;
@@ -44,7 +45,7 @@ class TestCase extends Orchestra
             SupportServiceProvider::class,
             TablesServiceProvider::class,
             WidgetsServiceProvider::class,
-            \JeffersonGoncalves\Filament\WhatsappWidget\WhatsappWidgetServiceProvider::class,
+            WhatsappWidgetServiceProvider::class,
             TestPanelProvider::class,
         ];
     }

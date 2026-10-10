@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Blade;
 use JeffersonGoncalves\Filament\WhatsappWidget\Resources\WhatsappAgentResource;
 use JeffersonGoncalves\Filament\WhatsappWidget\WhatsappWidgetPlugin;
 
